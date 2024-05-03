@@ -1,154 +1,252 @@
 {% load static %}
-<!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Multiverse by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Photosen &mdash; Colorlib Website Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html"><strong>Multiverse</strong> by HTML5 UP</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon fa-info-circle">About</a></li>
-							</ul>
-						</nav>
-					</header>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}">
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="{% static 'images/fulls/01.jpg' %}" class="image"><img src="{% static 'images/thumbs/01.jpg' %}" alt="" /></a>
-							<h2>Magna feugiat lorem</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/02.jpg' %}" class="image"><img src="{% static 'images/thumbs/02.jpg' %}" alt="" /></a>
-							<h2>Nisl adipiscing</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/03.jpg' %}" class="image"><img src="{% static 'images/thumbs/03.jpg' %}" alt="" /></a>
-							<h2>Tempus aliquam veroeros</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/04.jpg' %}" class="image"><img src="{% static 'images/thumbs/04.jpg' %}" alt="" /></a>
-							<h2>Aliquam ipsum sed dolore</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/05.jpg' %}" class="image"><img src="{% static 'images/thumbs/05.jpg' %}" alt="" /></a>
-							<h2>Cursis aliquam nisl</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/06.jpg' %}" class="image"><img src="{% static 'images/thumbs/06.jpg' %}" alt="" /></a>
-							<h2>Sed consequat phasellus</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/07.jpg' %}" class="image"><img src="{% static 'images/thumbs/07.jpg' %}" alt="" /></a>
-							<h2>Mauris id tellus arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/08.jpg' %}" class="image"><img src="{% static 'images/thumbs/08.jpg' %}" alt="" /></a>
-							<h2>Nunc vehicula id nulla</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/09.jpg' %}" class="image"><img src="{% static 'images/thumbs/09.jpg' %}" alt="" /></a>
-							<h2>Neque et faucibus viverra</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/10.jpg' %}" class="image"><img src="{% static 'images/thumbs/10.jpg' %}" alt="" /></a>
-							<h2>Mattis ante fermentum</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/11.jpg' %}" class="image"><img src="{% static 'images/thumbs/11.jpg' %}" alt="" /></a>
-							<h2>Sed ac elementum arcu</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="{% static 'images/fulls/12.jpg' %}" class="image"><img src="{% static 'images/thumbs/12.jpg' %}" alt="" /></a>
-							<h2>Vehicula id nulla dignissim</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
 
-				<!-- Footer -->
-					<footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-							<div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="field half">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-											<div class="field">
-												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div>
-						</div>
-					</footer>
+  <link rel="stylesheet" href="{% static 'css/lightgallery.min.css'%}">    
 
-			</div>
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
 
-		<!-- Scripts -->
-			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
-			<script src="{% static 'assets/js/jquery.poptrox.min.js' %}"></script>
-			<script src="{% static 'assets/js/browser.min.js' %}"></script>
-			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
-			<script src="{% static 'assets/js/util.js' %}"></script>
-			<script src="{% static 'assets/js/main.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css'%}">
 
-	</body>
+  <link rel="stylesheet" href="{% static 'css/swiper.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+<body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-xl-2" data-aos="fade-down">
+            <h1 class="mb-0"><a href="localhost:8000/index.html" class="text-white h2 mb-0">Photosen</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="has-children">
+                  <a href="single.html">Gallery</a>
+                  <ul class="dropdown">
+                    <li><a href="/eye">Right EYE</a></li>
+                    <li><a href="/eye">Left EYE</a></li>
+                    <li><a href="/nose">nose</a></li>
+                    <li><a href="/mouth">mouth</a></li>
+                    <li><a href="#">face</a></li>
+                    <li class="has-children">
+                      <!-- <a href="#">Sub Menu</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                      </ul> -->
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+            <div class="d-none d-xl-inline-block">
+              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+                <li>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-youtube-play"></span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+
+
+    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+      <div class="row">
+        <div class="col-lg-4">
+
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Nature</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_1.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Portrait</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_2.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">People</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_3.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Architecture</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_4.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Animals</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_5.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Sports</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_6.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Travel</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_7.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">People</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_3.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Architecture</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="{% static 'images/img_4.jpg'%}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer py-4">
+      <div class="container-fluid text-center">
+        <p>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script data-cfasync="false" src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+
+    
+
+    
+    
+  </div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{% static 'js/jquery-ui.js'%}"></script>
+  <script src="{% static 'js/popper.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js'%}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js'%}"></script>
+  <script src="{% static 'js/swiper.min.js'%}"></script>
+  <script src="{% static 'js/aos.js'%}"></script>
+
+  <script src="{% static 'js/picturefill.min.js'%}"></script>
+  <script src="{% static 'js/lightgallery-all.min.js'%}"></script>
+  <script src="{% static 'js/jquery.mousewheel.min.js'%}"></script>
+
+  <script src="{% static 'js/main.js'%}"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+
+</body>
 </html>

@@ -21,4 +21,17 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage, name="home"),
+    path('eye', views.eye, name="nose"),
+    path('nose', views.nose, name="nose"),
+    path('mouth', views.mouth, name="mouth"),
+    path('services', views.services, name="service"),
+    path('about', views.about, name="about"),
+    path('contact', views.contact, name="contact"),
+    path('services/form1', views.select_eye, name="select_eye"),
+    path('services/form2', views.select_nose, name="select_nose"),
+    path('services/form3', views.select_mouth, name="select_mouth"),
+    path('services/form4', views.final, name="final"),
+
+
+
 ]
